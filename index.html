@@ -3,17 +3,112 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Butter & Crumb</title>
     <link rel="stylesheet" href="screen.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
+
   <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
+    <div class="container py-4">
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Butter & Crumb</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catering</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-dark rounded-pill px-4 py-1">
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero position-relative mb-5">
+        <img src="bakery.jpeg" class="img-fluid rounded-4" alt="Display of fresh pastries and baked goods">
+        <div class="hero-text position-absolute top-50 end-0 text-end pe-5">
+          <h1 class="fw-bold">FRESHLY BAKED IN THE<br>HEART OF NYC</h1>
+          <button class="btn rounded-pill px-5 py-2 mt-2" style="background:#FEF7ED;">Order Now</button>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <h2 class="mb-3">ABOUT US</h2>
+            <p>At Butter & Crumb, we believe the best moments start with something freshly baked. From buttery croissants to handcrafted pastries, everything is made with care, quality ingredients, and a love for simple comforts.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="about.jpeg" class="img-fluid rounded-4" alt="Assortment of fresh pastries and baked goods">
+        </div>
+      </div>
+
+      <h2 class="mb-4">BEST SELLERS</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="croissant.jpeg" class="card-img-top" alt="Classic Butter Croissant">
+            <div class="card-body text-center">
+              <button class="btn btn-outline-dark rounded-pill px-3 mb-2">
+                Classic Butter Croissant
+              </button>
+              <p class="card-text small">Light, flaky, and golden, with rich buttery layers that melt in your mouth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="brioche.jpeg" class="card-img-top" alt="Cinnamon Brioche Roll">
+            <div class="card-body text-center">
+              <button class="btn btn-outline-dark rounded-pill px-3 mb-2">
+                Cinnamon Brioche Roll
+              </button>
+              <p class="card-text small">Soft brioche dough swirled with cinnamon sugar and a smooth vanilla glaze.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="danish.jpeg" class="card-img-top" alt="Mixed Berry Danish">
+            <div class="card-body text-center">
+              <button class="btn btn-outline-dark rounded-pill px-3 mb-2">
+                Mixed Berry Danish
+              </button>
+              <p class="card-text small">Buttery pastry filled with vanilla cream and topped with fresh seasonal berries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="cookie.jpeg" class="card-img-top" alt="Chocolate Chunk Cookie">
+            <div class="card-body text-center">
+              <button class="btn btn-outline-dark rounded-pill px-3 mb-2">
+                Chocolate Chunk Cookie
+              </button>
+              <p class="card-text small">Crispy on the edges, soft in the centre, and packed with dark chocolate chunks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
